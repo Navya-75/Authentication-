@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskTrack Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container" id="login-box">
+  <h2>Welcome Back 👋</h2>
+  <p>Login to continue your productivity journey</p>
+  <input type="email" placeholder="Email" id="login-email">
+  <input type="password" placeholder="Password" id="login-password">
+  <button onclick="login()">Login</button>
+  <span class="switch-link" onclick="showSignup()">Don't have an account? Sign Up</span>
+</div>
+
+<div class="container" id="signup-box" style="display: none;">
+  <h2>Create an Account</h2>
+  <p>Join TaskTrack to boost your productivity</p>
+  <input type="text" placeholder="Full Name" id="signup-name">
+  <input type="email" placeholder="Email" id="signup-email">
+  <input type="password" placeholder="Password" id="signup-password">
+  <input type="password" placeholder="Confirm Password" id="signup-confirm">
+  <button onclick="signup()">Sign Up</button>
+  <span class="switch-link" onclick="showLogin()">Already have an account? Login</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
